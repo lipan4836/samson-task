@@ -1,0 +1,118 @@
+@import 'normalize';
+@import 'components/buttons';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  padding: 40px;
+}
+
+.main {
+  width: 70%;
+  margin: 80px auto 80px;
+}
+
+.header,
+.footer {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.resume {
+  margin-bottom: 50px;
+}
+
+.tasks-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.task {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+
+  &__title {
+    color: #cc0000;
+  }
+
+  &__disc {
+    margin: 0;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}
+
+.footer {
+  &__timestamp,
+  &__author {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+  }
+
+  &__social-link {
+    display: block;
+    width: 32px;
+    height: 32px;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.2s ease-in;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: all 0.2s ease-in;
+    }
+
+    &.footer__social-link--github::before {
+      background-image: url('/logo-github.svg');
+    }
+
+    &.footer__social-link--telegram::before {
+      background-image: url('/logo-tg.svg');
+    }
+
+    &:hover::before {
+      transform: rotateY(180deg);
+    }
+  }
+
+  &__social-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+}
