@@ -1,0 +1,66 @@
+.text-head {
+  flex-direction: column;
+}
+
+.article-meta {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+
+  &__link {
+    color: #db4f4f;
+    text-decoration: none;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+      color: #5393cf;
+    }
+  }
+
+  &__date {
+    text-align: right;
+  }
+}
+
+.section {
+  margin-bottom: 50px;
+}
+
+.sub-head {
+  padding: 10px 35px;
+  background-color: #f1a6a6;
+  border-radius: 100px;
+  margin-bottom: 25px;
+}
+
+.summary {
+  &__title {
+    text-decoration: underline;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    margin-bottom: 15px;
+
+    &:hover {
+      color: #db4f4f;
+    }
+  }
+
+  &__link {
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      color: #db4f4f;
+    }
+  }
+}
+
+.engine {
+  &__content,
+  &__list {
+    margin-bottom: 15px;
+  }
+
+  &__tact-head {
+    margin: 15px 0;
+  }
+}
