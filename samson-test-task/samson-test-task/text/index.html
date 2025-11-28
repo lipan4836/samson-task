@@ -32,7 +32,7 @@
         <time class="article-meta__date" datetime="2025-11-28">28 ноября 2025 года</time>
       </div>
     </header>
-    <main class="main">
+    <main class="main text-article">
       <article class="vehicle-article">
         <section class="section" id="introduction">
           <h2 class="sub-head">Введение в автомобилестроение</h2>
@@ -86,75 +86,80 @@
             </ol>
           </div>
         </section>
-
-        <section class="section" id="transmission">
+        <section class="section transmission" id="transmission">
           <h2 class="sub-head">Трансмиссия</h2>
-          <p>Трансмиссия передает крутящий момент от двигателя к колесам. Основные компоненты:</p>
-
-          <dl>
-            <dt><dfn>Сцепление</dfn></dt>
-            <dd>обеспечивает плавное соединение двигателя с трансмиссией</dd>
-
-            <dt><dfn>Коробка передач</dfn></dt>
-            <dd>изменяет передаточное число</dd>
-
-            <dt><dfn>Карданный вал</dfn></dt>
-            <dd>передает вращение</dd>
-
-            <dt><dfn>Главная передача</dfn></dt>
-            <dd>увеличивает крутящий момент</dd>
-
-            <dt><dfn>Дифференциал</dfn></dt>
-            <dd>распределяет момент между колесами</dd>
+          <p class="transmission__disc">
+            Трансмиссия передает крутящий момент от двигателя к колесам. Основные компоненты:
+          </p>
+          <dl class="transmission__list">
+            <dt class="transmission__term"><dfn>Сцепление</dfn></dt>
+            <dd class="transmission__def">
+              обеспечивает плавное соединение двигателя с трансмиссией
+            </dd>
+            <dt class="transmission__term"><dfn>Коробка передач</dfn></dt>
+            <dd class="transmission__def">изменяет передаточное число</dd>
+            <dt class="transmission__term"><dfn>Карданный вал</dfn></dt>
+            <dd class="transmission__def">передает вращение</dd>
+            <dt class="transmission__term"><dfn>Главная передача</dfn></dt>
+            <dd class="transmission__def">увеличивает крутящий момент</dd>
+            <dt class="transmission__term"><dfn>Дифференциал</dfn></dt>
+            <dd class="transmission__def">распределяет момент между колесами</dd>
           </dl>
-
-          <section class="section">
-            <h3>Типы коробок передач</h3>
-            <table>
-              <caption>
+          <div class="transmission__types">
+            <h3 class="transmission__types-head">Типы коробок передач</h3>
+            <table class="transmission__types-table">
+              <caption class="transmission__types-cap">
                 Сравнительная характеристика типов коробок передач
               </caption>
               <thead>
                 <tr>
-                  <th scope="col">Тип КПП</th>
-                  <th scope="col">Преимущества</th>
-                  <th scope="col">Недостатки</th>
+                  <th class="transmission__header transmission__header--type" scope="col">
+                    Тип КПП
+                  </th>
+                  <th class="transmission__header transmission__header--pros" scope="col">
+                    Преимущества
+                  </th>
+                  <th class="transmission__header transmission__header--cons" scope="col">
+                    Недостатки
+                  </th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <th scope="row">Механическая</th>
-                  <td>Надежность, экономичность</td>
-                  <td>Сложность управления</td>
+                <tr class="transmission__row">
+                  <th class="transmission__type" scope="row">Механическая</th>
+                  <td class="transmission__cell transmission__cell--pros">
+                    Надежность, экономичность
+                  </td>
+                  <td class="transmission__cell transmission__cell--cons">Сложность управления</td>
                 </tr>
-                <tr>
-                  <th scope="row">Автоматическая</th>
-                  <td>Комфорт, простота</td>
-                  <td>Высокая стоимость</td>
+                <tr class="transmission__row">
+                  <th class="transmission__type" scope="row">Автоматическая</th>
+                  <td class="transmission__cell transmission__cell--pros">Комфорт, простота</td>
+                  <td class="transmission__cell transmission__cell--cons">Высокая стоимость</td>
                 </tr>
-                <tr>
-                  <th scope="row">Вариатор</th>
-                  <td>Плавность хода</td>
-                  <td>Ограниченный ресурс</td>
+                <tr class="transmission__row">
+                  <th class="transmission__type" scope="row">Вариатор</th>
+                  <td class="transmission__cell transmission__cell--pros">Плавность хода</td>
+                  <td class="transmission__cell transmission__cell--cons">Ограниченный ресурс</td>
                 </tr>
-                <tr>
-                  <th scope="row">Роботизированная</th>
-                  <td>Экономичность</td>
-                  <td>Рывки при переключении</td>
+                <tr class="transmission__row">
+                  <th class="transmission__type" scope="row">Роботизированная</th>
+                  <td class="transmission__cell transmission__cell--pros">Экономичность</td>
+                  <td class="transmission__cell transmission__cell--cons">
+                    Рывки при переключении
+                  </td>
                 </tr>
               </tbody>
             </table>
-          </section>
+          </div>
         </section>
-
-        <section class="section" id="chassis">
+        <section class="section chassis" id="chassis">
           <h2 class="sub-head">Ходовая часть и подвеска</h2>
-          <p>
+          <p class="chassis__disc">
             Ходовая часть обеспечивает перемещение автомобиля и комфорт пассажиров. Основные
             элементы:
           </p>
-
-          <ul>
+          <ul class="chassis__list">
             <li><strong>Рама</strong> или <strong>кузов</strong> — несущая конструкция</li>
             <li><strong>Подвеска</strong> — система упругих элементов</li>
             <li>
@@ -162,64 +167,78 @@
             </li>
             <li><strong>Амортизаторы</strong> — гасят колебания</li>
           </ul>
-
-          <aside>
+          <div>
             <p>
               <strong>Интересный факт:</strong> Современные системы активной подвески могут
               предсказывать неровности дороги с помощью камер и радаров.
             </p>
-          </aside>
+          </div>
         </section>
-
-        <section class="section" id="electrical">
+        <section class="section electrical" id="electrical">
           <h2 class="sub-head">Электрооборудование и системы безопасности</h2>
-          <p>Современный автомобиль насыщен электронными системами:</p>
-
-          <section class="section">
-            <h3>Основные электрические системы</h3>
-            <ul>
-              <li><strong>Система зажигания</strong> — воспламенение топливной смеси</li>
-              <li><strong>Система освещения</strong> — фары, габариты, поворотники</li>
-              <li><strong>Система запуска</strong> — стартер и аккумулятор</li>
-              <li><strong>Приборная панель</strong> — информирование водителя</li>
+          <p class="electrical__disc">Современный автомобиль насыщен электронными системами:</p>
+          <div class="electrical__systems">
+            <h3 class="electrical__head">Основные электрические системы</h3>
+            <ul class="electrical__list">
+              <li class="electrical__list--item">
+                <strong>Система зажигания</strong> — воспламенение топливной смеси
+              </li>
+              <li class="electrical__list--item">
+                <strong>Система освещения</strong> — фары, габариты, поворотники
+              </li>
+              <li class="electrical__list--item">
+                <strong>Система запуска</strong> — стартер и аккумулятор
+              </li>
+              <li class="electrical__list--item">
+                <strong>Приборная панель</strong> — информирование водителя
+              </li>
             </ul>
-          </section>
-
-          <section class="section">
-            <h3>Активные системы безопасности</h3>
-            <ul>
-              <li><abbr title="Anti-lock Braking System">ABS</abbr> (антиблокировочная система)</li>
-              <li>
+          </div>
+          <div class="electrical__active">
+            <h3 class="electrical__head">Активные системы безопасности</h3>
+            <ul class="electrical__list">
+              <li class="electrical__list--item">
+                <abbr title="Anti-lock Braking System">ABS</abbr> (антиблокировочная система)
+              </li>
+              <li class="electrical__list--item">
                 <abbr title="Electronic Stability Program">ESP</abbr> (система курсовой
                 устойчивости)
               </li>
-              <li><abbr title="Anti-Slip Regulation">ASR</abbr> (антипробуксовочная система)</li>
-              <li>Круиз-контроль</li>
+              <li class="electrical__list--item">
+                <abbr title="Anti-Slip Regulation">ASR</abbr> (антипробуксовочная система)
+              </li>
+              <li class="electrical__list--item">Круиз-контроль</li>
             </ul>
-          </section>
+          </div>
         </section>
-
-        <section class="section" id="future">
+        <section class="section future" id="future">
           <h2 class="sub-head">Будущее автомобилестроения</h2>
-          <p>Автомобильная промышленность находится на пороге революции. Основные тенденции:</p>
-
-          <ol>
-            <li><mark>Электрификация</mark> — переход на электромобили</li>
-            <li><mark>Автономное управление</mark> — беспилотные технологии</li>
-            <li><mark>Коннективность</mark> — подключение к интернету</li>
-            <li><mark>Шеринг</mark> — совместное использование транспорта</li>
+          <p class="future__disc">
+            Автомобильная промышленность находится на пороге революции. Основные тенденции:
+          </p>
+          <ol class="future__list">
+            <li class="future__list--item">
+              <mark>Электрификация</mark> — переход на электромобили
+            </li>
+            <li class="future__list--item">
+              <mark>Автономное управление</mark> — беспилотные технологии
+            </li>
+            <li class="future__list--item">
+              <mark>Коннективность</mark> — подключение к интернету
+            </li>
+            <li class="future__list--item">
+              <mark>Шеринг</mark> — совместное использование транспорта
+            </li>
           </ol>
-
-          <blockquote>
-            <p>
+          <blockquote class="future__quote">
+            <p class="future__quote-content">
               «К 2030 году более 30% новых автомобилей будут электрическими» — прогнозируют
               аналитики рынка.
             </p>
-            <cite>Отчет "Автомобильная промышленность 2025"</cite>
+            <cite class="future__quote-author">Отчет "Автомобильная промышленность 2025"</cite>
           </blockquote>
         </section>
-
-        <section class="section" id="conclusion">
+        <section class="section conclusion" id="conclusion">
           <h2 class="sub-head">Заключение</h2>
           <p>
             Автомобиль продолжает эволюционировать, становясь более <em>безопасным</em>,
@@ -227,24 +246,33 @@
             в эксплуатации, но и в осознании технологического прогресса.
           </p>
         </section>
-
-        <section class="section">
+        <section class="section materials">
           <p>
-            <small
-              >Статья подготовлена на основе технической документации и экспертных мнений.
-              Информация актуальна на <time datetime="2025-11-28">28 ноября 2025 года</time>.</small
-            >
+            <small>
+              Статья подготовлена на основе технической документации и экспертных мнений. Информация
+              актуальна на <time datetime="2025-11-28">28 ноября 2025 года</time>
+            </small>
           </p>
-
-          <nav aria-label="Дополнительные материалы">
-            <h3>Дополнительные материалы</h3>
-            <ul>
-              <li><a href="https://ru.wikipedia.org/wiki/Двигатель">Подробнее о двигателях</a></li>
-              <li><a href="https://ru.wikipedia.org/wiki/Трансмиссия">Типы трансмиссий</a></li>
+          <nav class="materials__nav" aria-label="Дополнительные материалы">
+            <h3 class="materials__head">Дополнительные материалы</h3>
+            <ul class="materials__list">
               <li>
-                <a href="https://ru.wikipedia.org/wiki/Электронный_блок_управления"
-                  >Электронные системы</a
+                <a class="materials__list--item" href="https://ru.wikipedia.org/wiki/Двигатель">
+                  Подробнее о двигателях
+                </a>
+              </li>
+              <li>
+                <a class="materials__list--item" href="https://ru.wikipedia.org/wiki/Трансмиссия">
+                  Типы трансмиссий
+                </a>
+              </li>
+              <li>
+                <a
+                  class="materials__list--item"
+                  href="https://ru.wikipedia.org/wiki/Электронный_блок_управления"
                 >
+                  Электронные системы
+                </a>
               </li>
             </ul>
           </nav>
