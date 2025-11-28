@@ -10,6 +10,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         text: resolve(__dirname, 'text/index.html'),
+        form: resolve(__dirname, 'form/index.html'),
       },
     },
   },
