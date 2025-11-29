@@ -12,6 +12,7 @@ export default defineConfig({
         text: resolve(__dirname, 'text/index.html'),
         form: resolve(__dirname, 'form/index.html'),
         justButtons: resolve(__dirname, 'justButtons/index.html'),
+        scheme: resolve(__dirname, 'scheme/index.html'),
       },
     },
   },
