@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тестовое задание</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles/main.scss" />
+    <link rel="stylesheet" href="/src/styles/pages/justButtons.scss" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="btns-simple">
+        <button class="btn btn--grey">Посмотреть</button>
+        <button class="btn btn--red-outline">Посмотреть</button>
+        <button class="btn btn--red">Посмотреть</button>
+        <button class="btn btn--arrow btn--grey">
+          Посмотреть <span class="symbol">&nbsp;▶︎</span>
+        </button>
+        <button class="btn btn--green">Посмотреть</button>
+        <button class="btn btn--green-outline">Посмотреть</button>
+      </div>
+      <div class="btns-logos">
+        <button class="btn btn-icon btn-icon--edit btn--grey">
+          <svg class="btn-icon__svg">
+            <use xlink:href="/btns-sprite.svg#btn-edit"></use>
+          </svg>
+          <span class="btn-icon__text">Редактировать</span>
+        </button>
+        <button class="btn btn-icon btn-icon--edit btn--grey">
+          <svg class="btn-icon__svg">
+            <use xlink:href="/btns-sprite.svg#btn-upload"></use>
+          </svg>
+          <span class="btn-icon__text">Выгрузить в Exel</span>
+        </button>
+        <button class="btn btn-icon btn-icon--edit btn--grey">
+          <svg class="btn-icon__svg">
+            <use xlink:href="/btns-sprite.svg#btn-delete"></use>
+          </svg>
+          <span class="btn-icon__text">Удалить список</span>
+        </button>
+        <button class="btn btn-icon btn-icon--edit btn--grey">
+          <svg class="btn-icon__svg">
+            <use xlink:href="/btns-sprite.svg#btn-print"></use>
+          </svg>
+          <span class="btn-icon__text">Распечатать</span>
+        </button>
+        <button class="btn btn-icon btn-icon--edit btn--grey">
+          <svg class="btn-icon__svg">
+            <use xlink:href="/btns-sprite.svg#btn-download"></use>
+          </svg>
+          <span class="btn-icon__text">Загрузить из файла</span>
+        </button>
+      </div>
+    </main>
+  </body>
+</html>

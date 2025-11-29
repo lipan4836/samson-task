@@ -5,6 +5,7 @@
   font-size: 18px;
   transition: all 0.2s ease-in;
   border: solid 1px #000000;
+  cursor: pointer;
 }
 
 .btn--grey {
@@ -104,5 +105,38 @@
     color: #888888;
     background-color: #f0f0f0;
     border-color: #d3d3d3;
+  }
+}
+
+.btn--arrow {
+  .symbol {
+    font-size: 13px;
+    color: #dc241f;
+    transition: color 0.2s ease-in;
+  }
+
+  &:active .symbol {
+    color: #a95e5c;
+  }
+
+  &:disabled .symbol {
+    color: #b6b6b6;
+  }
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &__svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    transition: all 0.2s ease-in;
+  }
+
+  &__text {
+    line-height: 1;
   }
 }

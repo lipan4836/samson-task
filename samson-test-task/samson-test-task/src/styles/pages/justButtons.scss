@@ -1,0 +1,13 @@
+.main {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.btns-simple,
+.btns-logos {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}

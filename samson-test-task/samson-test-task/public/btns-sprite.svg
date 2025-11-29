@@ -1,0 +1,31 @@
+<svg width="0" height="0" class="hidden">
+  <symbol version="1.1" id="btn-delete" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 512 512" xml:space="preserve" viewBox="0 0 512 512">
+    <polygon points="513,76.8 436.2,0 257,179.2 77.8,0 1,76.8 180.2,256 1,435.2 77.8,512 257,332.8 436.2,512 513,435.2 333.8,256 "></polygon>
+  </symbol>
+  <symbol version="1.1" id="btn-download" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 512 512" xml:space="preserve" viewBox="0 0 512 512">
+    <path d="M442.2,186.2H302.5V0h-93.1v186.2H69.8L256,418.9L442.2,186.2z M0,465.5V512h512v-46.5H0z"></path>
+  </symbol>
+  <symbol version="1.1" id="btn-edit" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" viewBox="0 0 471.925 471.926">
+    <g>
+      <g id="_x35_7_67_">
+        <g>
+          <path d="M299.143,61.405c-3.37-3.371-8.835-3.371-12.205,0L48.943,299.399c-3.37,3.37-3.371,8.835,0,12.205L160.32,422.981
+				c3.37,3.37,8.835,3.37,12.206,0l237.993-237.993c3.37-3.37,3.37-8.835,0-12.205L299.143,61.405z"></path>
+          <path d="M35.812,324.736c-2.295-2.295-5.682-3.108-8.768-2.106s-5.35,3.648-5.859,6.854L0.107,461.938
+				c-0.434,2.73,0.467,5.504,2.422,7.459s4.729,2.855,7.459,2.422l132.454-21.077c3.204-0.511,5.853-2.773,6.854-5.859
+				c1.002-3.086,0.188-6.473-2.107-8.767L35.812,324.736z"></path>
+          <path d="M469.398,113.905L358.02,2.528c-3.369-3.371-8.835-3.371-12.206,0l-34.543,34.543c-3.369,3.37-3.369,8.835,0,12.205
+				l111.377,111.377c3.371,3.37,8.837,3.37,12.206,0l34.544-34.543C472.767,122.74,472.767,117.275,469.398,113.905z"></path>
+        </g>
+      </g>
+    </g>
+  </symbol>
+  <symbol version="1.1" id="btn-print" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 512 512" xml:space="preserve" viewBox="0 0 512 512">
+    <path d="M384,362.7H128V384h256V362.7z M106.7,21.3h192V128h106.7v42.7h21.3v-64L320,0H85.3v170.7h21.3V21.3z M448,192H64
+	c-42.7,0-64,21.3-64,64v128h85.3v128h341.3V384H512V256C512,213.3,490.7,192,448,192z M85.3,277.3H42.7v-42.7h42.7V277.3z
+	 M405.3,490.7H106.7V341.3h298.7V490.7z M384,405.3H128v21.3h256V405.3z M384,448H128v21.3h256V448z"></path>
+  </symbol>
+  <symbol version="1.1" id="btn-upload" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 512 512" xml:space="preserve" viewBox="0 0 512 512">
+    <path d="M209.5,418.9h93.1V232.7h139.6L256,0L69.8,232.7h139.6V418.9z M0,465.5V512h512v-46.5H0z"></path>
+  </symbol>
+</svg>
