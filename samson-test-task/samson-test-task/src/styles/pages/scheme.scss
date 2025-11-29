@@ -12,6 +12,20 @@
   }
 }
 
+@mixin right-connector($width: 19px, $top: 12px) {
+  position: relative;
+
+  &::after {
+    content: '';
+    width: $width;
+    height: 1px;
+    position: absolute;
+    right: -$width;
+    top: $top;
+    background-color: #ffffff;
+  }
+}
+
 @mixin arrow-ver() {
   &::before {
     content: '';
@@ -155,6 +169,7 @@ body {
 
 .vozignuy {
   grid-area: vozignuy;
+  @include right-connector;
 }
 
 .boltushka {
@@ -165,6 +180,7 @@ body {
 .visyulkin {
   grid-area: visyulkin;
   @include left-connector;
+  @include right-connector;
 }
 
 .brus {
@@ -226,8 +242,39 @@ body {
 
 .line-ver-fourth {
   grid-area: line-ver-fourth;
+  width: 1px;
+  height: 104px;
+  background-color: #ffffff;
+  transform: translate(75px, -14px);
 }
 
 .line-ver-fifth {
   grid-area: line-ver-fifth;
+  position: relative;
+  width: 1px;
+  height: 105px;
+  background-color: #ffffff;
+  transform: translate(19px, 12px);
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -19px;
+    top: 3px;
+    width: 5px;
+    height: 1px;
+    background-color: #ffffff;
+    transform: rotateZ(45deg);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: -19px;
+    top: -3px;
+    width: 5px;
+    height: 1px;
+    background-color: #ffffff;
+    transform: rotateZ(-45deg);
+  }
 }
