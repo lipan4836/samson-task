@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" href="/src/styles/main.scss" />
     <link rel="stylesheet" href="/src/styles/pages/justButtons.scss" />
+    <script type="module" src="/src/scripts/justButtons.js" defer></script>
   </head>
   <body>
     <main class="main">
@@ -57,6 +58,13 @@
           </svg>
           <span class="btn-icon__text">Загрузить из файла</span>
         </button>
+      </div>
+      <div class="switch-wrap">
+        <label class="switch">
+          <input type="checkbox" id="switcher" />
+          <span class="slider red" id="round"></span>
+        </label>
+        <span class="switch-content">Отключить кнопки</span>
       </div>
     </main>
   </body>
