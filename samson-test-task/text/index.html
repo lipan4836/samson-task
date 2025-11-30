@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тестовое задание</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles/main.scss" />
+    <link rel="stylesheet" href="/src/styles/pages/text.scss" />
+    <script type="module" src="/src/scripts/homeBtn.js"></script>
+  </head>
+  <body>
+    <header class="header text-head">
+      <h1>Устройство современного автомобиля: от ДВС до электромобилей</h1>
+      <div class="article-meta">
+        <address>
+          Автор:
+          <a
+            class="article-meta__link"
+            href="https://github.com/lipan4836"
+            target="_blank"
+            rel="author"
+          >
+            Определённо умный человек, который разбирается в авто
+          </a>
+        </address>
+        <time class="article-meta__date" datetime="2025-11-28">28 ноября 2025 года</time>
+      </div>
+    </header>
+    <main class="main text-article">
+      <article class="vehicle-article">
+        <section class="section" id="introduction">
+          <h2 class="sub-head">Введение в автомобилестроение</h2>
+          <p>
+            Автомобиль — это сложная техническая система, состоящая из множества взаимосвязанных
+            <strong>механизмов и узлов</strong>. За последние сто лет автомобилестроение прошло
+            огромный путь от простых механических экипажей до высокотехнологичных транспортных
+            средств.
+          </p>
+        </section>
+        <section class="section" id="main-systems">
+          <h2 class="sub-head">Основные системы автомобиля</h2>
+          <details class="summary">
+            <summary class="summary__title">Развернуть список основных систем</summary>
+            <ol>
+              <li><a href="#engine" class="summary__link">Двигатель и системы питания</a></li>
+              <li><a href="#transmission" class="summary__link">Трансмиссия</a></li>
+              <li><a href="#chassis" class="summary__link">Ходовая часть</a></li>
+              <li><a href="#electrical" class="summary__link">Электрооборудование</a></li>
+              <li><a href="#future" class="summary__link">Будущее автомобилестроения</a></li>
+            </ol>
+          </details>
+        </section>
+        <section class="section engine" id="engine">
+          <h2 class="sub-head">Двигатель</h2>
+          <p class="engine__content">
+            Двигатель внутреннего сгорания (<abbr title="Двигатель Внутреннего Сгорания">ДВС</abbr>)
+            преобразует тепловую энергию в механическую работу. Современные двигатели могут работать
+            на различных видах топлива:
+          </p>
+          <ul class="engine__list">
+            <li><strong>Бензин</strong> — наиболее распространенное топливо</li>
+            <li><strong>Дизель</strong> — отличается экономичностью</li>
+            <li><strong>Газ</strong> — экологическая альтернатива</li>
+            <li><strong>Электричество</strong> — будущее автомобилестроения</li>
+          </ul>
+          <blockquote>
+            <p class="engine__content">
+              «Современный двигатель — это результат более чем 100-летней эволюции инженерной мысли»
+              — отмечают специалисты автомобильной промышленности.
+            </p>
+            <cite class="engine__author">Журнал "Автомобильные технологии"</cite>
+          </blockquote>
+          <div>
+            <h3 class="engine__tact-head">Принцип работы четырехтактного двигателя</h3>
+            <ol>
+              <li><em>Такт впуска</em> — горючая смесь поступает в цилиндр</li>
+              <li><em>Такт сжатия</em> — смесь сжимается поршнем</li>
+              <li><em>Такт рабочего хода</em> — воспламенение и расширение газов</li>
+              <li><em>Такт выпуска</em> — отработавшие газы удаляются из цилиндра</li>
+            </ol>
+          </div>
+        </section>
+        <section class="section transmission" id="transmission">
+          <h2 class="sub-head">Трансмиссия</h2>
+          <p class="transmission__disc">
+            Трансмиссия передает крутящий момент от двигателя к колесам. Основные компоненты:
+          </p>
+          <dl class="transmission__list">
+            <dt class="transmission__term"><dfn>Сцепление</dfn></dt>
+            <dd class="transmission__def">
+              обеспечивает плавное соединение двигателя с трансмиссией
+            </dd>
+            <dt class="transmission__term"><dfn>Коробка передач</dfn></dt>
+            <dd class="transmission__def">изменяет передаточное число</dd>
+            <dt class="transmission__term"><dfn>Карданный вал</dfn></dt>
+            <dd class="transmission__def">передает вращение</dd>
+            <dt class="transmission__term"><dfn>Главная передача</dfn></dt>
+            <dd class="transmission__def">увеличивает крутящий момент</dd>
+            <dt class="transmission__term"><dfn>Дифференциал</dfn></dt>
+            <dd class="transmission__def">распределяет момент между колесами</dd>
+          </dl>
+          <div class="transmission__types">
+            <h3 class="transmission__types-head">Типы коробок передач</h3>
+            <table class="transmission__types-table">
+              <caption class="transmission__types-cap">
+                Сравнительная характеристика типов коробок передач
+              </caption>
+              <thead>
+                <tr>
+                  <th class="transmission__header transmission__header--type" scope="col">
+                    Тип КПП
+                  </th>
+                  <th class="transmission__header transmission__header--pros" scope="col">
+                    Преимущества
+                  </th>
+                  <th class="transmission__header transmission__header--cons" scope="col">
+                    Недостатки
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="transmission__row">
+                  <th class="transmission__type" scope="row">Механическая</th>
+                  <td class="transmission__cell transmission__cell--pros">
+                    Надежность, экономичность
+                  </td>
+                  <td class="transmission__cell transmission__cell--cons">Сложность управления</td>
+                </tr>
+                <tr class="transmission__row">
+                  <th class="transmission__type" scope="row">Автоматическая</th>
+                  <td class="transmission__cell transmission__cell--pros">Комфорт, простота</td>
+                  <td class="transmission__cell transmission__cell--cons">Высокая стоимость</td>
+                </tr>
+                <tr class="transmission__row">
+                  <th class="transmission__type" scope="row">Вариатор</th>
+                  <td class="transmission__cell transmission__cell--pros">Плавность хода</td>
+                  <td class="transmission__cell transmission__cell--cons">Ограниченный ресурс</td>
+                </tr>
+                <tr class="transmission__row">
+                  <th class="transmission__type" scope="row">Роботизированная</th>
+                  <td class="transmission__cell transmission__cell--pros">Экономичность</td>
+                  <td class="transmission__cell transmission__cell--cons">
+                    Рывки при переключении
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="section chassis" id="chassis">
+          <h2 class="sub-head">Ходовая часть и подвеска</h2>
+          <p class="chassis__disc">
+            Ходовая часть обеспечивает перемещение автомобиля и комфорт пассажиров. Основные
+            элементы:
+          </p>
+          <ul class="chassis__list">
+            <li><strong>Рама</strong> или <strong>кузов</strong> — несущая конструкция</li>
+            <li><strong>Подвеска</strong> — система упругих элементов</li>
+            <li>
+              <strong>Колеса</strong> и <strong>шины</strong> — обеспечивают сцепление с дорогой
+            </li>
+            <li><strong>Амортизаторы</strong> — гасят колебания</li>
+          </ul>
+          <div>
+            <p>
+              <strong>Интересный факт:</strong> Современные системы активной подвески могут
+              предсказывать неровности дороги с помощью камер и радаров.
+            </p>
+          </div>
+        </section>
+        <section class="section electrical" id="electrical">
+          <h2 class="sub-head">Электрооборудование и системы безопасности</h2>
+          <p class="electrical__disc">Современный автомобиль насыщен электронными системами:</p>
+          <div class="electrical__systems">
+            <h3 class="electrical__head">Основные электрические системы</h3>
+            <ul class="electrical__list">
+              <li class="electrical__list--item">
+                <strong>Система зажигания</strong> — воспламенение топливной смеси
+              </li>
+              <li class="electrical__list--item">
+                <strong>Система освещения</strong> — фары, габариты, поворотники
+              </li>
+              <li class="electrical__list--item">
+                <strong>Система запуска</strong> — стартер и аккумулятор
+              </li>
+              <li class="electrical__list--item">
+                <strong>Приборная панель</strong> — информирование водителя
+              </li>
+            </ul>
+          </div>
+          <div class="electrical__active">
+            <h3 class="electrical__head">Активные системы безопасности</h3>
+            <ul class="electrical__list">
+              <li class="electrical__list--item">
+                <abbr title="Anti-lock Braking System">ABS</abbr> (антиблокировочная система)
+              </li>
+              <li class="electrical__list--item">
+                <abbr title="Electronic Stability Program">ESP</abbr> (система курсовой
+                устойчивости)
+              </li>
+              <li class="electrical__list--item">
+                <abbr title="Anti-Slip Regulation">ASR</abbr> (антипробуксовочная система)
+              </li>
+              <li class="electrical__list--item">Круиз-контроль</li>
+            </ul>
+          </div>
+        </section>
+        <section class="section future" id="future">
+          <h2 class="sub-head">Будущее автомобилестроения</h2>
+          <p class="future__disc">
+            Автомобильная промышленность находится на пороге революции. Основные тенденции:
+          </p>
+          <ol class="future__list">
+            <li class="future__list--item">
+              <mark>Электрификация</mark> — переход на электромобили
+            </li>
+            <li class="future__list--item">
+              <mark>Автономное управление</mark> — беспилотные технологии
+            </li>
+            <li class="future__list--item">
+              <mark>Коннективность</mark> — подключение к интернету
+            </li>
+            <li class="future__list--item">
+              <mark>Шеринг</mark> — совместное использование транспорта
+            </li>
+          </ol>
+          <blockquote class="future__quote">
+            <p class="future__quote-content">
+              «К 2030 году более 30% новых автомобилей будут электрическими» — прогнозируют
+              аналитики рынка.
+            </p>
+            <cite class="future__quote-author">Отчет "Автомобильная промышленность 2025"</cite>
+          </blockquote>
+        </section>
+        <section class="section conclusion" id="conclusion">
+          <h2 class="sub-head">Заключение</h2>
+          <p>
+            Автомобиль продолжает эволюционировать, становясь более <em>безопасным</em>,
+            <em>экономичным</em> и <em>экологичным</em>. Понимание его устройства помогает не только
+            в эксплуатации, но и в осознании технологического прогресса.
+          </p>
+        </section>
+        <section class="section materials">
+          <p>
+            <small>
+              Статья подготовлена на основе технической документации и экспертных мнений. Информация
+              актуальна на <time datetime="2025-11-28">28 ноября 2025 года</time>
+            </small>
+          </p>
+          <nav class="materials__nav" aria-label="Дополнительные материалы">
+            <h3 class="materials__head">Дополнительные материалы</h3>
+            <ul class="materials__list">
+              <li>
+                <a class="materials__list--item" href="https://ru.wikipedia.org/wiki/Двигатель">
+                  Подробнее о двигателях
+                </a>
+              </li>
+              <li>
+                <a class="materials__list--item" href="https://ru.wikipedia.org/wiki/Трансмиссия">
+                  Типы трансмиссий
+                </a>
+              </li>
+              <li>
+                <a
+                  class="materials__list--item"
+                  href="https://ru.wikipedia.org/wiki/Электронный_блок_управления"
+                >
+                  Электронные системы
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </article>
+    </main>
+    <footer class="footer">
+      <time class="footer__timestamp" datetime="2025-11">2025</time>
+      <div class="footer__socials">
+        <p class="footer__author">Дмитриев Антон</p>
+        <a
+          class="footer__social-link footer__social-link--github"
+          href="https://github.com/lipan4836"
+          target="_blank"
+        >
+          <span class="footer__social-text">GitHub</span>
+        </a>
+        <a
+          class="footer__social-link footer__social-link--telegram"
+          href="tg://resolve?domain=lipan48"
+          target="_blank"
+        >
+          <span class="footer__social-text">Telegram</span>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

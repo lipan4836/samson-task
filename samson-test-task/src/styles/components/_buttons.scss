@@ -1,0 +1,142 @@
+.btn {
+  color: #111111;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: all 0.2s ease-in;
+  border: solid 1px #000000;
+  cursor: pointer;
+}
+
+.btn--grey {
+  background-color: #ebebeb;
+  border-color: #afafaf;
+
+  &:hover {
+    background-color: #f4f4f4;
+  }
+
+  &:active {
+    color: #4c4c4c;
+    background-color: #e1e1e1;
+  }
+
+  &:disabled {
+    color: #888888;
+    background-color: #f0f0f0;
+    border-color: #d3d3d3;
+  }
+}
+
+.btn--red-outline {
+  background-color: #ebebeb;
+  border: solid 2px #dc241f;
+
+  &:hover {
+    background-color: #f4f4f4;
+  }
+
+  &:active {
+    color: #4c4c4c;
+    background-color: #f4f4f4;
+  }
+
+  &:disabled {
+    color: #888888;
+    background-color: #f0f0f0;
+    border-color: #d3d3d3;
+  }
+}
+
+.btn--red {
+  color: #ffffff;
+  background-color: #ca130c;
+  border: none;
+
+  &:hover {
+    background-color: #e83029;
+  }
+
+  &:active {
+    color: #edc2c2;
+    background-color: #a9120c;
+  }
+
+  &:disabled {
+    color: #ffd8d7;
+    background-color: #ec8e8b;
+  }
+}
+
+.btn--green {
+  color: #ffffff;
+  background-color: #6e9735;
+  border: none;
+
+  &:hover {
+    background-color: #85b444;
+  }
+
+  &:active {
+    color: #e1f0cd;
+    background-color: #5e822b;
+  }
+
+  &:disabled {
+    color: #e5f1d4;
+    background-color: #9fba7b;
+  }
+}
+
+.btn--green-outline {
+  background-color: #ebebeb;
+  border: solid 2px #6e9735;
+
+  &:hover {
+    background-color: #f4f4f4;
+  }
+
+  &:active {
+    color: #4c4c4c;
+    background-color: #e1e1e1;
+  }
+
+  &:disabled {
+    color: #888888;
+    background-color: #f0f0f0;
+    border-color: #d3d3d3;
+  }
+}
+
+.btn--arrow {
+  .symbol {
+    font-size: 13px;
+    color: #dc241f;
+    transition: color 0.2s ease-in;
+  }
+
+  &:active .symbol {
+    color: #a95e5c;
+  }
+
+  &:disabled .symbol {
+    color: #b6b6b6;
+  }
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &__svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    transition: all 0.2s ease-in;
+  }
+
+  &__text {
+    line-height: 1;
+  }
+}

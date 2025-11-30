@@ -1,0 +1,55 @@
+@import 'normalize';
+@import 'components/buttons';
+@import 'components/header';
+@import 'components/footer';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  padding: 40px;
+}
+
+.main {
+  width: 70%;
+  margin: 80px auto 80px;
+}
+
+.resume {
+  margin-bottom: 50px;
+}
+
+.tasks-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.task {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+
+  &__title {
+    color: #cc0000;
+  }
+
+  &__disc {
+    margin: 0;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}

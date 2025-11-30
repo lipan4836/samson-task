@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тестовое задание</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles/main.scss" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__head">Тестовое задание для Офисмаг</h1>
+      <h3 class="header__developer">Выполнил Дмитриев Антон</h3>
+    </header>
+    <main class="main">
+      <p class="resume">
+        Добрый день, читающий это. Я благодарен за возможность поучаствовать в конкурсе. Задачи
+        оказались интересными. По мере выполнения мне пришлось вспоминать уже подзабытые вещи, а так
+        же понять, что всего знать невозможно) Всегда есть что-то, что можно положить в свою
+        копилочку.
+      </p>
+      <p class="resume">
+        При старте думал о стеке много. Изначально хотель сделать всё на react. Но для таких задач
+        он был бы избыточен. Поэтому решил использовать обычную связку Vite+Vanilla. Выбор сделан в
+        пользу того, что это современно, удобно.
+      </p>
+      <p class="resume">
+        Vite имеет дев-сервер с hmr, легко собирает проект. А так же позволяет не превращять в
+        адские муки жизнь)) Я имею в виду форматирование.
+      </p>
+      <p class="resume">
+        В проект я поставил Eslint и Prettier. Эти инструменты позволяют не думать о форматировании.
+        Достаточно запустить пару команд и код выровнен как надо.
+      </p>
+      <p class="resume">
+        И ещё раз хочу поблагодарить за возможность. Мне всё понравилось. Пусть у меня и не
+        получилось всё идеально, но я действительно старался.
+      </p>
+      <section class="tasks-wrap">
+        <article class="task">
+          <h2 class="task__title">Текст</h2>
+          <p class="task__disc">
+            Страница с текстовым содержимым, в котором я старался использовать максимальное
+            количество различных тегов, не забывая про семантику.
+          </p>
+          <a class="task__link btn btn--grey" href="/text/">Перейти</a>
+        </article>
+        <article class="task">
+          <h2 class="task__title">Форма</h2>
+          <p class="task__disc">
+            Вёрстка формы. Да, не получилось реализовать pixel perfect, но я старался. Форму сделал
+            полностью функциональной. При сабмите она собирает данные и выводит в модальном окне.
+            Выход из модального окна осуществляется при клике на кнопку или при клике за пределами
+            модального окна. Сам контент решил генерировать через создание элементов в JS и
+            подключение его к контейнеру. Валидацию полей решил оставить браузерную (проверка
+            обязательных полей).
+          </p>
+          <a class="task__link btn btn--grey" href="/form/">Перейти</a>
+        </article>
+        <article class="task">
+          <h2 class="task__title">Кнопки</h2>
+          <p class="task__disc">
+            Вёрстка кнопок в различных состояних: статична, ховер, активная и отклено. Для удобства
+            добавил скрипт и свитчер для выключения всех кнопок. Была мысль сделать генерацию всех
+            кнопок полностью через JS (с входными параметрами нужной кнопки).
+          </p>
+          <a class="task__link btn btn--grey" href="/justButtons/">Перейти</a>
+        </article>
+        <article class="task">
+          <h2 class="task__title">Схема</h2>
+          <p class="task__disc">
+            Вёрстку схемы сделал на гридах. Думаю, что есть альтернативный путь - через canvas в JS.
+          </p>
+          <a class="task__link btn btn--grey" href="/scheme/">Перейти</a>
+        </article>
+        <article class="task">
+          <h2 class="task__title">Слайдер</h2>
+          <p class="task__disc">
+            Простой слайдер на html и css, который адаптируется под ширину экрана.
+          </p>
+          <a class="task__link btn btn--grey" href="/slider/">Перейти</a>
+        </article>
+        <article class="task">
+          <h2 class="task__title">Чёрная страница</h2>
+          <p class="task__disc">
+            Это действительно вызов. Мои глаза сломались в первые пару минут. Но потом со второго
+            подхода что-то получилось. У меня, конечно, остались вопросики... Да и не уверен, что
+            полученный мной результат верен :) Но вроде выглядит как страница чего-то.
+          </p>
+          <a class="task__link btn btn--grey" href="/blackPage/">Перейти</a>
+        </article>
+        <article class="task">
+          <h2 class="task__title">Красота</h2>
+          <p class="task__disc">
+            Реализаци кнопки и свитчера. К сожалению добить свитчер не получилось. Найдена точка для
+            роста: реализация 3D-элементов в css.
+          </p>
+          <a class="task__link btn btn--grey" href="/beautiful/">Перейти</a>
+        </article>
+      </section>
+    </main>
+    <footer class="footer">
+      <time class="footer__timestamp" datetime="2025-11">2025</time>
+      <div class="footer__socials">
+        <p class="footer__author">Дмитриев Антон</p>
+        <a
+          class="footer__social-link footer__social-link--github"
+          href="https://github.com/lipan4836"
+          target="_blank"
+        >
+          <span class="footer__social-text">GitHub</span>
+        </a>
+        <a
+          class="footer__social-link footer__social-link--telegram"
+          href="tg://resolve?domain=lipan48"
+          target="_blank"
+        >
+          <span class="footer__social-text">Telegram</span>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

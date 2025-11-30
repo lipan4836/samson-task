@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тестовое задание</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles/main.scss" />
+    <link rel="stylesheet" href="/src/styles/pages/form.scss" />
+    <script type="module" src="/src/scripts/form.js" defer></script>
+    <script type="module" src="/src/scripts/homeBtn.js"></script>
+  </head>
+  <body>
+    <section class="form-section">
+      <div class="wrap">
+        <header class="header">
+          <h1 class="head-form">Заполните поля</h1>
+          <h3 class="sub-head">ну пожалуйста</h3>
+        </header>
+        <main class="content">
+          <form action="" class="form">
+            <div class="top">
+              <div class="empty"></div>
+              <h2 class="top__head">Основное</h2>
+              <label for="name" class="label-name">Имя</label>
+              <input
+                type="text"
+                class="input-name"
+                name="name"
+                id="name"
+                placeholder="По паспорту"
+                required
+              />
+              <label for="color" class="label-color">Цвет вашего настроения</label>
+              <input type="color" class="input-color" name="color" id="color" />
+            </div>
+            <div class="mid">
+              <div class="empty-mid"></div>
+              <h2 class="head-mid">Дополнительно</h2>
+              <label for="coment" class="label-coment">Коментарий</label>
+              <textarea
+                class="input-coment"
+                name="coment"
+                id="coment"
+                cols="25"
+                rows="3"
+                placeholder="Напишите хоть что-нибудь.
+Если хотите, конечно."
+              ></textarea>
+            </div>
+            <div class="bottom">
+              <div class="empty-bottom-first"></div>
+              <label class="radio">
+                <input type="radio" name="radio" id="radio" class="radio__input" required />
+                <span class="radio__text">Ну а тут просто полежит радиобатон</span>
+              </label>
+              <div class="empty-bottom-second"></div>
+              <label class="checkbox">
+                <input
+                  type="checkbox"
+                  name="checkbox"
+                  id="checkbox"
+                  class="checkbox__input"
+                  required
+                />
+                <span class="checkbox__text"
+                  >Соглашаюсь на всё, что бы вы не придумали и осознаю, что может означать
+                  <a href="https://yandex.ru/search/?text=что%20угодно" target="_blank"
+                    >что угодно</a
+                  ></span
+                >
+              </label>
+              <div class="empty-bottom-third"></div>
+              <div class="submit">
+                <button class="submit__btn">Отправить все мои данные</button>
+              </div>
+            </div>
+          </form>
+        </main>
+      </div>
+    </section>
+    <div class="modal" id="modal">
+      <div class="modal__content">
+        <h3 class="modal__head">Ваши данные</h3>
+        <div class="modal__data" id="data"></div>
+        <p class="modal__opinion">
+          <i
+            >Если так подумать... То зря вы наверное отправляли свои данные непонятно куда :р Ну да
+            ладно.
+          </i>
+        </p>
+        <button class="modal__close submit__btn" id="close">Закрыть</button>
+      </div>
+    </div>
+  </body>
+</html>

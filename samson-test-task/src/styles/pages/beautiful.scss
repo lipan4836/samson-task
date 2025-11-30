@@ -1,0 +1,119 @@
+@import '/src/styles/components/homeBtn';
+
+.main {
+  width: 100%;
+  height: 100svh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.btn-cont,
+.switcher {
+  width: 650px;
+  height: 250px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-cont {
+  background-color: #436da0;
+}
+
+.switcher {
+  background-color: #fff7f7;
+}
+
+.button {
+  font-size: 14px;
+  position: relative;
+  background: #436da0;
+  border-radius: 100px;
+  padding: 8px 25px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  color: #ececec;
+  box-shadow:
+    -1px -1px 1px #304f75,
+    1px 1px 1px #304f75,
+    inset -2px -2px 2px rgba(158, 158, 158, 0.5),
+    inset 2px 2px 2px rgba(158, 158, 158, 0.5);
+
+  &:hover {
+    color: #fff7f7;
+    background: #4c7aaa;
+    box-shadow:
+      -1px -1px 2px #304f75,
+      1px 1px 2px rgba(0, 0, 0, 0.2),
+      inset -2px -2px 2px rgba(158, 158, 158, 0.5),
+      inset 2px 2px 2px rgba(158, 158, 158, 0.5);
+  }
+
+  &:active {
+    color: #c1cad7;
+    background-color: #3f6492;
+    box-shadow:
+      inset -1px -1px 2px rgba(255, 255, 255, 0.5),
+      inset 1px 1px 2px rgba(0, 0, 0, 0.1);
+    color: #79e3b6;
+  }
+}
+
+.switcher {
+  &__input {
+    display: none;
+
+    &:checked + .switcher__label {
+      .switcher__ball {
+        transform: translateX(40px) rotateY(180deg);
+        background: #4caf50;
+      }
+    }
+  }
+
+  &__label {
+    position: relative;
+    display: block;
+    width: 80px;
+    height: 40px;
+    border: 12px solid #e9e9e9;
+    border-radius: 100px;
+    cursor: pointer;
+    overflow: hidden;
+    background: linear-gradient(to right, #4caf50 0%, #4caf50 50%, #f44336 50%, #f44336 100%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: all 0.4s linear;
+
+    .switcher__input:checked + & {
+      background-position: 0 0;
+    }
+
+    &:hover {
+      border-color: #e2e2e2;
+    }
+  }
+
+  &__ball {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s linear;
+    z-index: 2;
+  }
+
+  .switcher__input:checked + .switcher__label .switcher__ball {
+    transform: translateX(40px);
+    background-position: 100% 0%;
+  }
+}
