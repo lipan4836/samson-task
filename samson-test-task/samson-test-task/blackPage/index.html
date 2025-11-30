@@ -33,20 +33,17 @@
       * * * {
         display: grid;
       }
+
       html {
         overflow-y: hidden;
         overflow-x: hidden;
         position: absolute;
         top: 10px;
-        background: #000000 url(27685708057_b6bdb65f3c_o.png) no-repeat 0 0;
-      }
-      html > *:last-child {
-        background: red;
-        background: #ffffff00;
+        background: #000000 url(27685708057_b6bdb65f3c_o.png) no-repeat 0 -10px;
       }
 
-      html body .bg-light {
-        background: rgba(0, 0, 0, 0);
+      body {
+        background: transparent;
       }
     </style>
   </head>
@@ -68,8 +65,13 @@
       <div class="container">
         <span
           class="text-muted"
-          style="color: red; text-align: centner; position: relative; bottom: 14.18px"
-        >
+          style="
+						color: red;
+						text-align: centner;
+						position: relative;
+						bottom: 14.18px;
+					"
+      	>
           Невероятный личностный опыт, восхитительное удовольствие.
         </span>
         <a
