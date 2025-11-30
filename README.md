@@ -23,8 +23,13 @@
 ### Команды
 
 `npm run dev` запуск dev-сервера
+
 `npm run build` сборка проекта
+
 `npm run lint` запуск проверки ESLint
+
 `npm run lint:fix` запуск проверки и исправления ошибок ESLint
+
 `npm run format:check` запуск проверки Prettier
+
 `npm run format` запуск проверки и исправления формата кода Prettier
