@@ -15,6 +15,7 @@ export default defineConfig({
         scheme: resolve(__dirname, 'scheme/index.html'),
         slider: resolve(__dirname, 'slider/index.html'),
         blackPage: resolve(__dirname, 'blackPage/index.html'),
+        beautiful: resolve(__dirname, 'beautiful/index.html'),
       },
     },
   },
