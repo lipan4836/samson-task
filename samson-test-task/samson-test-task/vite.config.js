@@ -13,6 +13,7 @@ export default defineConfig({
         form: resolve(__dirname, 'form/index.html'),
         justButtons: resolve(__dirname, 'justButtons/index.html'),
         scheme: resolve(__dirname, 'scheme/index.html'),
+        slider: resolve(__dirname, 'slider/index.html'),
       },
     },
   },
