@@ -14,6 +14,7 @@ export default defineConfig({
         justButtons: resolve(__dirname, 'justButtons/index.html'),
         scheme: resolve(__dirname, 'scheme/index.html'),
         slider: resolve(__dirname, 'slider/index.html'),
+        blackPage: resolve(__dirname, 'blackPage/index.html'),
       },
     },
   },
