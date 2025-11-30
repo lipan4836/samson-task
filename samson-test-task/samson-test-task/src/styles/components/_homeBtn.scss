@@ -1,0 +1,22 @@
+.home-btn {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px #000000;
+  border-radius: 5px;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    transform: scale(1.1) rotateZ(9deg);
+  }
+
+  &__img {
+    width: 40px;
+    height: 40px;
+  }
+}
